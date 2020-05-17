@@ -14,12 +14,10 @@
 	<style media="screen">
 		body{
 			text-align:center;
+			padding: 10px;
 		}
 		button{
 			background-color:goldenrod;
-			position:relative;
-			transform:translateY(-50%);
-			top:50%;
 			border:none;
 			height:10%;
 			width:30%;
@@ -28,10 +26,25 @@
 			font-size:20px;
 			border-radius:15px;
 		}
+		#logo{
+			width:25%;
+			height: auto;
+		}
 		@media only screen and (max-width: 600px) {
 		  button{
 		  	width:80%;
 		  }
+			#logo{
+				width:90%;
+				height: auto;
+			}
+		}
+		h3{
+			margin-top: 50px;
+			color: goldenrod;
+		}
+		h4{
+			color:green;
 		}
 	</style>
 	<script type="text/javascript">
@@ -47,8 +60,14 @@
 		})
 	</script>
   <body>
+		<img src="logo.png" alt="logo" id="logo"> <br>
 		<button type="button" name="job" id="job">नौकरी की तलाश में?</button> <br>
-		<button type="button" name="employ" id="employ">रकर्मचारी की आवश्यकता है?</button>
+		<button type="button" name="employ" id="employ">कर्मचारी की आवश्यकता है?</button>
+		<h3>
+		नियोक्ता - कर्मचारी -नियोक्ता </h3>
+
+ 		<h4>एक परियोजना जो लोगों को सही नौकरी और सही नियोक्ता को सही व्यक्ति से जोड़ती है।</h4>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
